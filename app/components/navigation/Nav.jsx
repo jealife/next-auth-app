@@ -12,15 +12,12 @@ const navLinks = [
 function Nav() {
     return (
         <nav>
-            <div className="logo">
-                <Link href='/' >Logo</Link>
-            </div>
             <menu >
                 <Navigation navLinks={navLinks} />
             </menu>
 
             <div className='btn_nav'>
-                <Link href='/login' className='btn_link'>Sign in
+                <Link href='/' className='btn_link'>Sign in
                 </Link>
             </div>
         </nav>

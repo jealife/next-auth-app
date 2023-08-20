@@ -1,15 +1,12 @@
-import React from 'react'
-import styles from './gallery.module.css'
+import './gallery.css'
 
 
-function gallery() {
+export default function gallery() {
   return (
-    <main className={styles.mai+styles.flex}>
+    <main className="main flex">
 
       <h1>Gallery</h1>
 
     </main>
   )
 }
-
-export default gallery

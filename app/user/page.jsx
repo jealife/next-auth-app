@@ -1,13 +1,10 @@
-import React from 'react'
-import styles from './user.modules.css'
+import './user.css'
 
 
-function user() {
+export default function user() {
   return (
-    <main className={styles.mai+styles.flex}>
+    <main className="main">
       <h1>Profile</h1>
     </main>
   )
 }
-
-export default user
