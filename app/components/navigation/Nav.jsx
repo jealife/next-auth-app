@@ -7,6 +7,7 @@ const navLinks = [
     { name: 'Accueil', href: '/' },
     { name: 'Profile', href: '/user' },
     { name: 'Gallerie ', href: '/gallery' },
+    { name: 'Admin ', href: '/admin' },
 ]
 
 function Nav() {

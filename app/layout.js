@@ -1,3 +1,5 @@
+'use client'
+import { AuthContextProvider } from './context/AuthContext'
 import Nav from './components/navigation/Nav'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -11,13 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={inter.className}>
-        <header>
-          <Nav />
-        </header>
-        {children}
-
+        <AuthContextProvider>
+          <header>
+            <Nav />
+          </header>
+          {children}
+        </AuthContextProvider>
       </body>
     </html>
   )
