@@ -1,0 +1,165 @@
+.left-section {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+
+/*Formulaire de connexion */
+form {
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.2rem 3rem 1.2rem;
+    height: max-content;
+    width: 370px;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0px 42px 50px 0px #26264648;
+}
+
+form h1 {
+    color: #1a237e;
+    text-transform: capitalize;
+}
+
+form  .login, .login-sign-up, .sign-up{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.login{
+    margin-top: 1.5rem;
+}
+.sign-up{
+    margin-top: 1rem;
+}
+.link-connexion {
+    display: flex;
+    /* width: max-content; */
+    font-size: .8rem;
+    gap: 10px;
+    margin: 0 auto;
+    transition: .5s;
+    color: #1a237e;
+}
+
+.link-connexion a {
+    transition: all .5s ease-in-out;
+}
+
+
+.link-connexion span:nth-child(2){
+    cursor: pointer;
+    border-bottom: #1a227e7c 0.5px solid;
+}
+
+.link-connexion a:hover {
+    color: #0015ff;
+}
+
+form  input[type=text], input[type=email],
+ input[type=password] {
+    padding: .8rem 1rem;
+    border: none;
+    outline: solid .5px #161d2c44;
+    border-radius: 25px;
+    transition: .5s;
+    font-size: 1rem;
+    color: #12181f;
+    font-weight: 500;
+    width: 100%;
+    background-color: #e2e2e2;
+}
+
+ input[type=text]:focus,
+ input[type=password]:focus, input[type=email]:focus {
+    outline: solid .5px #242fac;
+    box-shadow: 0px 0px 15px 0px #2f40fc2a;
+
+}
+
+input[type=submit] {
+    margin-top: 1rem;
+    transition: all .3s;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 25px;
+    width: max-content;
+    align-self: center;
+    background-color: #1a237e;
+    color: white;
+
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: translateY(3px);
+    background-color: #ffc107;
+    box-shadow: 0px 10px 15px 0px #ffd04588;
+}
+
+.password-field {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+}
+
+.password-field  .bx{
+    margin-top: -30px;
+    margin-right: 20px;
+    cursor: pointer;
+    cursor: pointer;
+    font-size: .8prem;
+}
+
+.show-password {
+    padding: 0.8rem 0 0 .8rem;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 5px;
+    width: 100%;
+    font-size: .8rem;
+    align-items: center;
+
+}
+
+.show-password input[type=checkbox] {
+    cursor: pointer;
+}
+
+
+
+/* signUp form  */
+.name{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+@media (max-width: 500.98px){
+    form {
+        margin-top: 2rem;
+        width: 100%;
+        min-width: 320px;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.267);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .left-section {
+        width: 100%;
+        padding: 0 25px;
+    }
+    input[type=submit] {
+        margin: 1rem 0;
+    }
+    
+}

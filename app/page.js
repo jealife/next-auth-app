@@ -4,7 +4,7 @@ import addData from "./firebase/firestore/addData";
 import styles from './page.module.css'
 
 export default function Home() {
-  const [idUser,setIdUser]=useState(0)
+  // const [idUser,setIdUser]=useState(0);
   const handleForm = async () => {
     const data = {
       name: 'Jealife',

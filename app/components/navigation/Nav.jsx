@@ -18,7 +18,7 @@ function Nav() {
             </menu>
 
             <div className='btn_nav'>
-                <Link href='/' className='btn_link'>Sign in
+                <Link href='signup' className='btn_link'>Sign Up
                 </Link>
             </div>
         </nav>
