@@ -51,7 +51,7 @@ function Page() {
     return (
         <div className="left-section">
             <form onSubmit={handleForm} className="form" >
-                <h1 id="formTitle">S'enregister</h1>
+                <h1 id="formTitle">S&apos;enregister</h1>
 
                 <div className="sign-up" id="signUp">
                     <div className="name">
